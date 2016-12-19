@@ -33,10 +33,8 @@ public class UserController {
 
     //对于ModelAndView构造函数可以指定返回页面的名称，也可以通过setViewName方法来设置所需要跳转的页面；
     @RequestMapping(value="/index1",method= RequestMethod.GET)
-    public ModelAndView index(){
-        ModelAndView modelAndView = new ModelAndView("/user/index");
-        modelAndView.addObject("name", "xxx");
-        return modelAndView;
+    public String index(){
+       return "herbsWeb";
     }
 
     //返回的是一个包含模型和视图的ModelAndView对象；
