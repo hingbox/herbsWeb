@@ -1,0 +1,43 @@
+/* 头部样式开始*/
+#headerPack{
+    position: fixed; top: 0px; z-index: 1000; width: 100%; box-shadow: 0px 0px 5px rgb(196, 196, 196); border-bottom: 0px solid rgb(204, 204, 204);
+}
+/* 头部样式结束*/
+
+/* 主体部分 [[*/
+.cgh_search {
+    border-top: 2px solid #FF7300;
+    padding: 8px 0px;
+    background: #F7F7F7 none repeat scroll 0% 0%;
+    overflow: hidden;
+}.cgh_search_text {
+     height: 32px;
+     line-height: 32px;
+     display: block;
+     float: left;
+     margin-left: 35px;
+ }
+em, i {
+    font-style: normal;
+}.cgh_search_inp {
+     height: 14px;
+     display: block;
+     float: left;
+     padding: 8px 0px 8px 10px;
+     border: 1px solid #DDD;
+     width: 118px;
+     margin-left: 5px;
+ }.cgh_search_sub:hover {
+      background: transparent url("http://www.yaocaimaimai.com/static/img/btn_bg.jpg") no-repeat scroll 0px -96px;
+  }
+.cgh_search_sub {
+    float: left;
+    display: block;
+    width: 64px;
+    height: 32px;
+    background: transparent url("http://www.yaocaimaimai.com/static/img/btn_bg.jpg") no-repeat scroll 0px -64px;
+    margin-left: 35px;
+    cursor: pointer;
+    border:none;
+}
+/* 主体部分 ]]*/
