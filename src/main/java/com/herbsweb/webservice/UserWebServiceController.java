@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
  * Version:v1.0
  */
 @Controller
-public class UserController {
+public class UserWebServiceController {
 
     @Autowired
     private IUserService userService;
