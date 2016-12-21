@@ -11,18 +11,17 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <base href="<%=basePath%>">
     <link href="<c:url value="/public/css/bootstrap.css"/>" rel="stylesheet">
 <%--<link rel="stylesheet" type="text/css" href="<%=basePath%>/css/bootstrap.css">--%>
-    <script type="text/javascript" src="<%=basePath%>/js/jquery.min.js"></script>
-    <script type="text/javascript" src="<%=basePath%>/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="<%=basePath%>public/js/jquery.min.js"></script>
+    <script type="text/javascript" src="<%=basePath%>public/js/bootstrap.min.js"></script>
 </head>
 
 <body>
 <p>你好呀</p>
 <p>我好呀11111111111111111</p>
-        ${user.age}
-        ${user.id}
-        ${user.password}
+
 
 <div class="container">
+    <button id="c">点击我</button>
     <div class="jumbotron">
         <h1>我的第一个 Bootstrap 页面</h1>
         <p>重置窗口大小，查看响应式效果！</p>
@@ -45,6 +44,14 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
         </div>
     </div>
 </div>
+<script type="text/javascript">
+    $(function(){
+        $("#c").click(function(){
+            alert("点击到我了");
+        })
+    });
+
+</script>
 </body>
 
 </html>

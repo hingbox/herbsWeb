@@ -18,7 +18,7 @@ import java.util.Map;
  * Version:v1.0
  */
 @Controller
-@RequestMapping("/user")
+//@RequestMapping("/user")
 public class UserController {
     @Resource
     private IUserService userService;
@@ -37,6 +37,10 @@ public class UserController {
        return "herbsWeb";
     }
 
+    @RequestMapping(value="/main",method= RequestMethod.GET)
+    public String main(){
+        return "main";
+    }
     //返回的是一个包含模型和视图的ModelAndView对象；
     @RequestMapping(value="/index2",method=RequestMethod.GET)
     public ModelAndView index2(){

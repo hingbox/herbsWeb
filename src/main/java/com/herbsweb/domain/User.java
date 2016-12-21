@@ -1,5 +1,8 @@
 package com.herbsweb.domain;
 
+/**
+ * 用户类实体
+ */
 public class User {
     private Integer id;
 
